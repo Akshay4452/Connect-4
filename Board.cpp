@@ -22,6 +22,23 @@ void Board::PrintBoard() {
 	std::cout << "------------------------------" << std::endl;
 }
 
+bool Board::UpdateGrid(int columnNumber, std::string value, int& rowNumber) {
+    for (int i = 5; i >= 0; i--) {
+        if (columnNumber >= 0 && columnNumber <= 6 && board[i][columnNumber].GetTileValue() == " ")
+        {
+            rowNumber = i;
+            if (value == "R") {
+                board[i][columnNumber].SetTileValue(RED_TEXT + value + DEFAULT_COLOR);
+            }
+            else {
+                board[i][columnNumber].SetTileValue(BLUE_TEXT + value + DEFAULT_COLOR);
+            }
+            return true;
+        }
+    }
+    return false;
+}
+
 bool Board::HorizontalCheck(int row, int column)
 {
     int counter = 1;
@@ -112,4 +129,12 @@ bool Board::RightDiagonalCheck(int row, int column)
         }
     }
     return false;
+}
+
+int Board::GetRows() const {
+    return rows;
+}
+
+int Board::GetColumns() const {
+    return columns;
 }

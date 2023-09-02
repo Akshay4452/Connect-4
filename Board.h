@@ -12,9 +12,12 @@ private:
 public:
 	void SetBoard();
 	void PrintBoard();
-	bool UpdateBoard();
+	bool UpdateGrid(int columnNumber, std::string value, int& rowNumber);
 	bool HorizontalCheck(int row, int column);
 	bool VerticalCheck(int row, int column);
 	bool LeftDiagonalCheck(int row, int column);
 	bool RightDiagonalCheck(int row, int column);
+public:
+	int GetRows() const;
+	int GetColumns() const;
 };
