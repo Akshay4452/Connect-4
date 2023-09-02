@@ -13,8 +13,8 @@ public:
 	void SetBoard();
 	void PrintBoard();
 	bool UpdateBoard();
-	bool HorizontalCheck();
-	bool VerticalCheck();
-	bool LeftDiagonalCheck();
-	bool RightDiagonalCheck();
+	bool HorizontalCheck(int row, int column);
+	bool VerticalCheck(int row, int column);
+	bool LeftDiagonalCheck(int row, int column);
+	bool RightDiagonalCheck(int row, int column);
 };

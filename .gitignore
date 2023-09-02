@@ -1,6 +1,15 @@
 # Prerequisites
 *.d
 
+# Visual C++ cache files
+ipch/
+*.aps
+*.ncb
+*.opendb
+*.opensdf
+*.sdf
+*.cachefile
+
 # Compiled Object files
 *.slo
 *.lo
