@@ -1,5 +1,7 @@
 #pragma once
 #include "Tile.h"
+#include <Windows.h>
+
 #define RED_TEXT "\033[31m"
 #define BLUE_TEXT "\033[34m"
 #define DEFAULT_COLOR "\033[0m"

@@ -84,8 +84,8 @@ bool Board::VerticalCheck(int row, int column)
 bool Board::LeftDiagonalCheck(int row, int column)
 {
     int count = 1;
-    int right = std::min(5 - row, 6 - column);
-    int left = std::min(row, column);
+    int right = min(5 - row, 6 - column);
+    int left = min(row, column);
     for (int i = -left + 1; i <= right; i++)
     {
         int rowIndex = row + i;
@@ -109,8 +109,8 @@ bool Board::LeftDiagonalCheck(int row, int column)
 bool Board::RightDiagonalCheck(int row, int column)
 {
     int count = 1;
-    int right = std::min(row, 6 - column);
-    int left = std::min(5 - row, column);
+    int right = min(row, 6 - column);
+    int left = min(5 - row, column);
     for (int i = -left + 1; i <= right; i++)
     {
         int rowIndex = row - i;

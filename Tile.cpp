@@ -7,5 +7,5 @@ std::string Tile::GetTileValue() {
 }
 
 void Tile::SetTileValue(std::string value) {
-	m_tileValue = value;
+	this->m_tileValue = value;
 }

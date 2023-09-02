@@ -17,4 +17,8 @@ public:
 	void Play();
 	void PlayerWon();
 	void ResetGame();
+public:
+	~Game() {
+		std::cout << "Game object destroyed\n";
+	}
 };
