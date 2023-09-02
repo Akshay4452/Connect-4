@@ -77,6 +77,9 @@ void Game::PlayerInput(Player currentPlayer) {
                     break;
                 }
             }
+            if (!isInputCorrect) {
+                OutOfBoundsInput(col);
+            }
         }
         else {
             WrongInput();
@@ -98,8 +101,8 @@ void Game::Play() {
 }
 
 void Game::PlayerWon() {
-    std::string winner = currentPlayer == Player::Player1 ? "Player 1 (R) Won!" :
-        "Player 2 (B) Won!";
+    std::string winner = currentPlayer == Player::Player1 ? "Player 2 (B) Won!" :
+        "Player 1 (R) Won!";
     winner = isGameDraw ? "*-------------------- IT'S A DRAW !! --------------------*" : winner;
     std::cout << "\n*-------------------- GAME OVER --------------------*";
     std::cout << std::endl << winner << std::endl;
