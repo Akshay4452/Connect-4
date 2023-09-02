@@ -1,3 +1,4 @@
+# Connect-4 Game
 🎮 Welcome to Connect-4, a classic game of strategy and skill with a twist! Similar to the childhood favorite Tic-Tac-Toe, but on a larger grid, this game challenges two players to connect four of their markers in a row, either horizontally, vertically, or diagonally. Player 1 is represented by red markers, while Player 2 uses blue markers.
 
 Game Rules
